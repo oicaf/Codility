@@ -3,14 +3,6 @@ Task: https://app.codility.com/programmers/lessons/2-arrays/cyclic_rotation/
 Score: https://app.codility.com/demo/results/trainingZSMHFX-F6H/
 */
 
-struct Results
-{
-	int * A;
-	int N;
-};
-
-#include <stdio.h>
-
 struct Results solution(int A[], int N, int K)
 {
 	int i, j, tmp = 0;
@@ -43,14 +35,3 @@ struct Results solution(int A[], int N, int K)
 		return result;
 	}
 }
-	
-void main()
-{
-	int A[] = {3, 8, 9, 7, 6}, N = sizeof(A) / sizeof(A[0]), K = 3;
-	struct Results result = solution(A, N, K);
-
-	for (int i = 0; i < N; i++)
-		printf("%d ", result.A[i]);
-		printf("\n");
-}
-
