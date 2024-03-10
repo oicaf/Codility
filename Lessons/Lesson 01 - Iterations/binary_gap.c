@@ -13,8 +13,6 @@ between ones.
 7. If the argument from the beginning or as a result of division is < 5, it ends immediately with the result 0.
 */
 
-#include <stdio.h>
-
 int solution(int N)
 {
 	int tmp = 0, result = 0;
@@ -57,12 +55,3 @@ int solution(int N)
 	else
 		return result;
 }
-
-void main()
-{
-	int N = 1041;
-	//int N = 32;
-	
-	printf("%d\n", solution(N));
-}
-
