@@ -6,8 +6,6 @@ Algorithm:
 Using the XOR operator through all elements of the array, extracting one unpaired element which is the result.
 */
 
-#include <stdio.h>
-
 int solution(int A[], int N)
 {
     int result = A[0];
@@ -19,11 +17,4 @@ int solution(int A[], int N)
         result ^= A[i];
 
     return result;
-}
-
-void main()
-{
-    int A[] = {9, 3, 9, 3, 9, 7, 9}, N = sizeof(A) / sizeof(A[0]);
-
-    printf("%d\n", solution(A, N));
 }
