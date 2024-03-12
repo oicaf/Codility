@@ -8,7 +8,7 @@ Algorithm:
 3. If the array elements are only negative, the result is the absolute value of the sum of the last two 
 elements of the array.
 4. If the elements of the array are positive and negative, the initial min absolute sum is the absolute 
-sum of the two extreme elements board.
+sum of the two extreme elements array.
 5. Then two absolute sums are compared, the current left + right minus 1 with the current right + left 
 plus 1.
 6. Depending on which sum is smaller, the leftmost marker is moved by 1 to the right or the rightmost 
