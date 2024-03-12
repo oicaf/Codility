@@ -5,7 +5,7 @@ Score: https://app.codility.com/demo/results/trainingZYJRH6-2PY/
 Algorithm:
 1. Counting the occurrences of elements in the input array and saving the results in an auxiliary array 
 (the number of each item).
-2. Building another auxiliary board consisting only of elements to be used, i.e. those that have at 
+2. Building another auxiliary array consisting only of elements to be used, i.e. those that have at 
 least two identical elements (a pair) from which you can initially build a fence (two opposite sides).
 3. Using the binary search algorithm to find a second pair of identical elements that meets the task 
 assumption (>=X) where the first pair (multiplier x) is scanned in the main loop linearly from the 
