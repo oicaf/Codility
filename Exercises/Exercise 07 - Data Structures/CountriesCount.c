@@ -83,24 +83,3 @@ int solution(int **A, int N, int M)
 
     return countries;
 }
-
-int main(void)
-{   
-    int N = 7, M = 3;
-
-    int **A = malloc(N * sizeof(int *));
-    for (int i = 0; i < N; i++)
-        A[i] = malloc(M * sizeof(int));
-
-    A[0][0] = 5;    A[0][1] = 4;    A[0][2] = 4;
-    A[1][0] = 4;    A[1][1] = 3;    A[1][2] = 4;
-    A[2][0] = 3;    A[2][1] = 2;    A[2][2] = 4;
-    A[3][0] = 2;    A[3][1] = 2;    A[3][2] = 2;
-    A[4][0] = 3;    A[4][1] = 3;    A[4][2] = 4;
-    A[5][0] = 1;    A[5][1] = 4;    A[5][2] = 4;
-    A[6][0] = 4;    A[6][1] = 1;    A[6][2] = 1;
-
-    printf("%d\n", solution(A, N, M));
-
-    return 0;
-}
