@@ -1,22 +1,20 @@
 /*
 Task: https://app.codility.com/programmers/trainings/1/slalom_skiing/
-Score: https://app.codility.com/demo/results/trainingSTU3TM-ES9/
+Score: https://app.codility.com/demo/results/trainingJGRS7E-435/
 
 Strategy:
-The LIS (Longest Increasing Subsequence) method was used here in a modified version for the task.
+The LIS (Longest Increasing Subsequence) method has been used with some modifications/adaptations.
 */
 
 #include <stdio.h>
 #include <stdlib.h>
 
-int lower_bound(long long int *tails, int size, long long int x) {
+int binary_search(long long int *dp, int size, long long int x) {
     int left = 0, right = size, mid;
 
-    while (left <= right) {
+    while (left < right) {
         mid = (left + right) / 2;
-        if (x < tails[mid])
-            right = mid - 1;
-        else if (x > tails[mid])
+        if (x > dp[mid])
             left = mid + 1;
         else
             right = mid;
@@ -26,34 +24,26 @@ int lower_bound(long long int *tails, int size, long long int x) {
 
 int solution(int A[], int N) {
     int i, j = 0, max = 0, len = 0, pos;
-    long long int *T = malloc((3 * N) * sizeof(long long int));
-    long long int *tails = malloc((3 * N + 1) * sizeof(long long int));
-
-    for (i = 0; i < 3 * N + 1; i++)
-        tails[i] = -1;
+    long long int *triple = malloc((3 * N) * sizeof(long long int));
+    long long int *dp = malloc(N * sizeof(long long int));
 
     for (i = 0; i < N; i++)
         max = A[i] > max ? A[i] : max;
-    max = max + 1;
 
     for (i = 0; i < N; i++) {
-        T[j++] = 2 * max + A[i];
-        T[j++] = 2 * max - A[i];
-        T[j++] = A[i];
+        triple[j++] = (long long int)2 * max + A[i];
+        triple[j++] = 2 * max - A[i];
+        triple[j++] = A[i];
     }
 
-    tails[0] = -1;
     for (i = 0; i < 3 * N; i++) {
-        pos = lower_bound(tails, len, T[i]);
-        if (tails[pos] == -1) {
-            tails[pos] = T[i];
-            len++;
-        }
-        else
-            tails[pos] = (tails[pos] < T[i]) ? tails[pos] : T[i];
+        pos = binary_search(dp, len, triple[i]);
+        dp[pos] = triple[i];
+        if (pos == len)
+             len++;
     }
 
-    free(T);
-    free(tails);
+    free(triple);
+    free(dp);
     return len;
 }
