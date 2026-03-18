@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/3-time_complexity/perm_missing_elem/
-Score: https://app.codility.com/demo/results/trainingUSPYGT-GK6/
+Score: https://app.codility.com/demo/results/trainingQB5Q92-TJ5/
 
 Algorithm:
 The first iteration is XOR through all elements of the array and then (second iteration) XOR the result from the first iteration by
