@@ -1,5 +1,5 @@
 // Task: https://app.codility.com/programmers/lessons/3-time_complexity/frog_jmp/
-// Score: https://app.codility.com/demo/results/training7DGUYH-SS8/
+// Score: https://app.codility.com/demo/results/trainingE5N9QW-4KP/
 
 int solution(int X, int Y, int D)
 {
