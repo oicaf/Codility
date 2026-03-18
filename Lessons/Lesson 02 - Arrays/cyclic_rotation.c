@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/2-arrays/cyclic_rotation/
-Score: https://app.codility.com/demo/results/trainingZSMHFX-F6H/
+Score: https://app.codility.com/demo/results/trainingTKK9G8-WRP/
 */
 
 struct Results solution(int A[], int N, int K)
