@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/3-time_complexity/tape_equilibrium
-Score: https://app.codility.com/demo/results/training9RGMZQ-47Z/
+Score: https://app.codility.com/demo/results/trainingCJSUTY-ANE/
 */
 
 #include <stdlib.h>
