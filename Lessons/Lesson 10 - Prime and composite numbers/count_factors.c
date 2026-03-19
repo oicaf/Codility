@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/10-prime_and_composite_numbers/count_factors/
-Score: https://app.codility.com/demo/results/trainingP8CKNQ-TQS/
+Score: https://app.codility.com/demo/results/training6PKJ4U-QZF/
 */
 
 #include <math.h>
