@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/trainings/2/rectangle_builder_greater_area/
-Score: https://app.codility.com/demo/results/trainingZYJRH6-2PY/
+Score: https://app.codility.com/demo/results/trainingDCPAD9-A56/
 
 Algorithm:
 1. Counting the occurrences of elements in the input array and saving the results in an auxiliary array 
