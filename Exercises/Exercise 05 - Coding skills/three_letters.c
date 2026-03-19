@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/trainings/5/three_letters/
-Score: https://app.codility.com/demo/results/training8XYJ5X-5JD/
+Score: https://app.codility.com/demo/results/training73VB7Y-BBK/
 
 Algorithm:
 1. If A > B, in each iteration extract a maximum of two letters 'a' and one 'b' until A and B are equal 
