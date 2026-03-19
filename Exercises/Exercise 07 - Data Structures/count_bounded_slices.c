@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/trainings/7/count_bounded_slices/
-Score: https://app.codility.com/demo/results/trainingVCEZNA-WJT/
+Score: https://app.codility.com/demo/results/trainingF5BKYD-XCF/
 
 Algorithm:
 1. Creating / building a compartmental (segment) tree using the recursive method, where each node is an 
