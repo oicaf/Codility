@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/7-stacks_and_queues/nesting/
-Score: https://app.codility.com/demo/results/training237NTJ-AF5/
+Score: https://app.codility.com/demo/results/training26WARV-SG7/
 */
 
 #include <string.h>
