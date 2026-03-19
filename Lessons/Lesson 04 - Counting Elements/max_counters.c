@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/4-counting_elements/max_counters/
-Score: https://app.codility.com/demo/results/trainingNDJTAR-RKR/
+Score: https://app.codility.com/demo/results/trainingAN6GXV-Q62/
 
 Algorithm:
 1. Resetting the counting array C.
