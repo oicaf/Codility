@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/trainings/5/parity_degree/
-Score: https://app.codility.com/demo/results/training6YW3MQ-Z6H/
+Score: https://app.codility.com/demo/results/trainingBZKP7R-HVU/
 
 Algorithm:
 The number of bit shifts to the right by one in the input argument until one appears on the least 
