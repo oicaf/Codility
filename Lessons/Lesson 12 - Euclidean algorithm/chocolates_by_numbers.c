@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/12-euclidean_algorithm/chocolates_by_numbers/
-Score: https://app.codility.com/demo/results/training7GNWBV-8BM/
+Score: https://app.codility.com/demo/results/trainingJS9GV3-HQV/
 
 Algorithm:
 N and M meet at their least common multiply. Dividing this LCM by M gets the number of steps (chocolates) 
