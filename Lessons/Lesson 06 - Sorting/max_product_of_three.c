@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/6-sorting/max_product_of_three/
-Score: https://app.codility.com/demo/results/training43ET2Y-GZ8/
+Score: https://app.codility.com/demo/results/training496JX9-W85/
 */
 
 void Sortowanie(int A[], int left, int right)
