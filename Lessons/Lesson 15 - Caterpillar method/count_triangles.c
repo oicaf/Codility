@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/15-caterpillar_method/count_triangles/
-Score: https://app.codility.com/demo/results/trainingB8D7BU-B88/
+Score: https://app.codility.com/demo/results/trainingJM86C2-DH2/
 */
 
 void Sortowanie(int A[], int left, int right)
