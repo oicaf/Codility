@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/15-caterpillar_method/min_abs_sum_of_two/
-Score: https://app.codility.com/demo/results/trainingXR5M8P-NG4/
+Score: https://app.codility.com/demo/results/trainingAT4ETQ-EV9/
 
 Algorithm:
 1. Sort the array ascending.
