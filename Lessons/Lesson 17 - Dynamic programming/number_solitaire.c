@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/17-dynamic_programming/number_solitaire/
-Score: https://app.codility.com/demo/results/trainingCEKXER-EQH/
+Score: https://app.codility.com/demo/results/trainingKETPC3-8P3/
 
 Algorithm:
 The idea is to linearly scan the input array and sum each element of this array with the max value of 
