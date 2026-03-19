@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/4-counting_elements/missing_integer/
-Score: https://app.codility.com/demo/results/trainingUXCZKV-93K/
+Score: https://app.codility.com/demo/results/trainingH57M46-C35/
 */
 
 #include <stdlib.h>
