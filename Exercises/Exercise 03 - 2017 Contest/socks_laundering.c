@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/trainings/3/socks_laundering/
-Score: https://app.codility.com/demo/results/trainingVDKB9M-S57/
+Score: https://app.codility.com/demo/results/training4EGCD8-7CT/
 
 Algorithm:
 1. Creating two auxiliary tables for counting and sorting the number of clean and dirty socks according 
