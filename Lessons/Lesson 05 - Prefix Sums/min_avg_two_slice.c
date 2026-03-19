@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/5-prefix_sums/min_avg_two_slice/
-Score: https://app.codility.com/demo/results/trainingQ3QX2V-QB4/
+Score: https://app.codility.com/demo/results/training3FNHUY-SHQ/
 
 Algorytm:
 It's enough to find the minimum average of slices of length 2 or 3. This is because a slice 
