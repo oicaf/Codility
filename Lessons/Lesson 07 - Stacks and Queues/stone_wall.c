@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/7-stacks_and_queues/stone_wall/
-Score: https://app.codility.com/demo/results/trainingN66A8B-J3F/
+Score: https://app.codility.com/demo/results/training7DQK2T-2VZ/
 
 Algorithm:
 1. Using a stack to store heights that are less than the current height.
