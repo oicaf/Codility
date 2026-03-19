@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/10-prime_and_composite_numbers/min_perimeter_rectangle/
-Score: https://app.codility.com/demo/results/trainingNJ3AQ3-3NA/
+Score: https://app.codility.com/demo/results/training5X7FQN-CZS/
 */
 
 #include <math.h>
