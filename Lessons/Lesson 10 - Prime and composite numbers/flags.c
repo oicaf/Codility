@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/10-prime_and_composite_numbers/flags/
-Score: https://app.codility.com/demo/results/trainingVSQ2M2-C55/
+Score: https://app.codility.com/demo/results/trainingQD7MJD-SYG/
 
 Algorithm:
 1. Creating an auxiliary array with the number of all peaks, where the elements of the array denote the 
