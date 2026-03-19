@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/5-prefix_sums/count_div/
-Score: https://app.codility.com/demo/results/trainingMNDKXJ-YYT/
+Score: https://app.codility.com/demo/results/trainingNSHBN6-8HB/
 */
 
 int solution(int A, int B, int K)
