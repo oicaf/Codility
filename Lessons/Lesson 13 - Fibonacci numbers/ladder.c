@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/13-fibonacci_numbers/ladder/
-Score: https://app.codility.com/demo/results/trainingP9WH3E-D5A/
+Score: https://app.codility.com/demo/results/training5SVC3V-6V4/
 
 Algorithm:
 1. Calculation of the Fibonachi sequence for the length of the array L, with the attention that it must 
