@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/14-binary_search_algorithm/min_max_division/
-Score: https://app.codility.com/demo/results/training27AJ66-UZA/
+Score: https://app.codility.com/demo/results/trainingKXJBAQ-ZWW/
 
 Algorithm:
 1. Extracting the element with the maximum value from the input array and calculating the sum of all elements.
