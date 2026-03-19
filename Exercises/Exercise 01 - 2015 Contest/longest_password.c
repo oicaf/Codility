@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/trainings/1/longest_password/
-Score: https://app.codility.com/demo/results/trainingFQYHJC-XSW/
+Score: https://app.codility.com/demo/results/training3QAGZA-679/
 
 Algorithm:
 1. The outer loop runs until it encounters the end of text character.
