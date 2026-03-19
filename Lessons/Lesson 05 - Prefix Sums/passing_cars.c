@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/5-prefix_sums/passing_cars/
-Score: https://app.codility.com/demo/results/trainingKF9MQX-MU5/
+Score: https://app.codility.com/demo/results/training4D9XAJ-SP7/
 */
 
 int solution(int A[], int N)
