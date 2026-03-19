@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/9-maximum_slice_problem/max_double_slice_sum/
-Score: https://app.codility.com/demo/results/trainingXQ3V7K-MAC/
+Score: https://app.codility.com/demo/results/training3V67V7-H2H/
 */
 
 int solution(int A[], int N)
