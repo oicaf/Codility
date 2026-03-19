@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/9-maximum_slice_problem/max_profit/
-Score: https://app.codility.com/demo/results/training7HD25B-M4N/
+Score: https://app.codility.com/demo/results/trainingCG6BUS-329/
 
 Algorithm:
 1. Linearly comparing O(N) adjacent elements and calculating their profit.
