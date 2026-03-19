@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/16-greedy_algorithms/tie_ropes/
-Score: https://app.codility.com/demo/results/trainingF6ZXWB-FHV/
+Score: https://app.codility.com/demo/results/trainingWQ37BS-MWV/
 
 Algorithm:
 1. Checking whether the length of a single rope or subsequent ropes is >= K:
