@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/11-sieve_of_eratosthenes/count_semiprimes/
-Score: https://app.codility.com/demo/results/training3ZJDVQ-69A/
+Score: https://app.codility.com/demo/results/trainingVHMK9K-AM6/
 
 Algorithm:
 1. Creating an auxiliary 'primes' array where elements with a value of 0 are prime numbers and elements 
