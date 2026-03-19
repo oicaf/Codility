@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/7-stacks_and_queues/fish/
-Score: https://app.codility.com/demo/results/training5VDK63-QB9/
+Score: https://app.codility.com/demo/results/trainingYPNPVV-JGH/
 
 The algorithm consists in linearly comparing each fish from A, along with its direction B, to the current 
 fish in the stack. It is on the stack always the most current (survived the previous fight) fish to be 
