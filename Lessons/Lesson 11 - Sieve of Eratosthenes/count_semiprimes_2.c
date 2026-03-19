@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/11-sieve_of_eratosthenes/count_semiprimes/
-Score: https://app.codility.com/demo/results/trainingPEHRHX-9ZX/
+Score: https://app.codility.com/demo/results/trainingM3V7Q4-KDD/
 
 Algorithm:
 1. Creating an auxiliary array where the composite number has an element with the value 1.
