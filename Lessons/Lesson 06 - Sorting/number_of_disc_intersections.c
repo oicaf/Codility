@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_intersections/
-Score: https://app.codility.com/demo/results/training7DY8P7-CRM/
+Score: https://app.codility.com/demo/results/trainingRY4XGD-89J/
 */
 
 #include <stdlib.h>
