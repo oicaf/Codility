@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/trainings/5/parity_degree/
-Score: https://app.codility.com/demo/results/training9YUTHG-QJR/
+Score: https://app.codility.com/demo/results/trainingTQWT4K-V2R/
 
 Algorithm:
 The number of cycles of each iteration increasing the numerator (power) by 1 until the remainder of the 
