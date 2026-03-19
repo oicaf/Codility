@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/5-prefix_sums/genomic_range_query/
-Score: https://app.codility.com/demo/results/training4J8DSX-TP6/
+Score: https://app.codility.com/demo/results/trainingS7WJYT-HGY/
 
 Algorithm:
 1. The first step is to create a two-dimensional array where:
