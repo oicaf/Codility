@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/7-stacks_and_queues/fish/
-Score: https://app.codility.com/demo/results/trainingSSZN99-BBM/
+Score: https://app.codility.com/demo/results/trainingC3V24E-333/
 
 Algorithm:
 1. If fish swim against the current (0) and do not encounter others swimming in the opposite direction (1) 
