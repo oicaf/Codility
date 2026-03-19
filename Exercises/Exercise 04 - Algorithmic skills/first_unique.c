@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/trainings/4/first_unique/
-Score: https://app.codility.com/demo/results/training9KCCT9-VTF/
+Score: https://app.codility.com/demo/results/trainingZBMMQR-4FS/
 
 Algorithm:
 1. Searching for the maximum value in the input array.
