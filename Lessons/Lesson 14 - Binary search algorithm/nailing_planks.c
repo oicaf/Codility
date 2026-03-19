@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/14-binary_search_algorithm/nailing_planks/
-Score: https://app.codility.com/demo/results/trainingNFSD4N-M74/
+Score: https://app.codility.com/demo/results/trainingUQG23E-SU5/
 
 Algorithm:
 1. The strategy is to first sort the boards and then scan the nails and do the following:
