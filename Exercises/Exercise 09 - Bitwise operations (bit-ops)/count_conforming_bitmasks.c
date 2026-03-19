@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/trainings/9/count_conforming_bitmasks/
-Score: https://app.codility.com/demo/results/trainingMG5UAU-U9B/
+Score: https://app.codility.com/demo/results/trainingC8AK3W-WWH/
 
 Algorithm:
 Counting zeros in each 30-bit mask (A, B and C) separately. The number of zeros in each mask means the 
