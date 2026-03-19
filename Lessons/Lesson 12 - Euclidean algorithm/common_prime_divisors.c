@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/12-euclidean_algorithm/common_prime_divisors/
-Score: https://app.codility.com/demo/results/trainingXHEPDT-8ZZ/
+Score: https://app.codility.com/demo/results/training24GNC9-PC2/
 
 Algorithm:
 1. Using Euclid's algorithm to find the GCD of two numbers, if GCD == 1 the answer is false.
