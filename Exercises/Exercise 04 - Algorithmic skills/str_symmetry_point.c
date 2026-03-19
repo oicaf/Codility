@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/trainings/4/str_symmetry_point/
-Score: https://app.codility.com/demo/results/trainingX8H2R6-AQN/
+Score: https://app.codility.com/demo/results/trainingVPGNE9-H2X/
 
 Algorithm:
 1. Words of even character length do not satisfy the conditions by default.
