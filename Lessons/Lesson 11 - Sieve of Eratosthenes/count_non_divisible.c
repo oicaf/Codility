@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/11-sieve_of_eratosthenes/count_non_divisible/
-Score: https://app.codility.com/demo/results/training383WN2-KQR/
+Score: https://app.codility.com/demo/results/trainingCTBSHS-QPP/
 
 Algorithm:
 1. Create an auxiliary array that counts the occurrences of each element in the array.
