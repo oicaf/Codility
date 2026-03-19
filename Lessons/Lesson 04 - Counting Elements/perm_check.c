@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/4-counting_elements/perm_check/
-Score: https://app.codility.com/demo/results/trainingE4HRCH-952/
+Score: https://app.codility.com/demo/results/training88W8UX-KSX/
 */
 
 #include <stdlib.h>
