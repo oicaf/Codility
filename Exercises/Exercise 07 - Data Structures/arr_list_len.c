@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/trainings/7/arr_list_len/
-Score: https://app.codility.com/demo/results/training92ATYZ-TQ4/
+Score: https://app.codility.com/demo/results/training6U7S8J-9YK/
 
 Algorithm:
 Starting at index 0, the value of the element at that index is the next index in the link, etc. until 
