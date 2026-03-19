@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/6-sorting/distinct/
-Score: https://app.codility.com/demo/results/trainingYYD7JG-P84/
+Score: https://app.codility.com/demo/results/trainingNEC2YT-3X9/
 */
 
 void Sortowanie(int A[], int left, int right)
