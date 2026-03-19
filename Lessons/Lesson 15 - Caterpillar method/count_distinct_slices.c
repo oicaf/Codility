@@ -1,7 +1,7 @@
 
 /*
 Task: https://app.codility.com/programmers/lessons/15-caterpillar_method/count_distinct_slices/
-Score: https://app.codility.com/demo/results/trainingBVBSEH-4EA/
+Score: https://app.codility.com/demo/results/training9TQGQ3-PVW/
 
 Algorithm:
 1. The start starts with zero back (rear of the caterpillar) and front (front of the caterpillar).
