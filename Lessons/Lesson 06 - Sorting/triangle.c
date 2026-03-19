@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/6-sorting/triangle/
-Score: https://app.codility.com/demo/results/trainingBVG9VT-TEU/
+Score: https://app.codility.com/demo/results/training7YAMU7-Y9G/
 */
 
 void Sortowanie(int A[], int left, int right)
