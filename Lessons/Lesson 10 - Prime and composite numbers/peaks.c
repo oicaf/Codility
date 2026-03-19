@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/10-prime_and_composite_numbers/peaks/
-Score: https://app.codility.com/demo/results/training2865UT-CAM/
+Score: https://app.codility.com/demo/results/trainingWV6U33-9C3/
 
 Algorithm:
 1. Creating an array/equivalent of the same length for the input containing only 0 and 1 where 1 means 
