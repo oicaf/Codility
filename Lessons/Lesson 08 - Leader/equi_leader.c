@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/8-leader/equi_leader/
-Score: https://app.codility.com/demo/results/training6PFKAD-CKC/
+Score: https://app.codility.com/demo/results/training2S9HBU-FVZ/
 
 Algorithm:
 1. Determining the leader (goldenLeader) in linear O(N) on the example of a lesson.
