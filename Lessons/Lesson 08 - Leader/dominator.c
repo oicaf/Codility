@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/8-leader/dominator/
-Score: https://app.codility.com/demo/results/trainingKAHMH6-SCS/
+Score: https://app.codility.com/demo/results/training9Y4DGW-DKZ/
 */
 
 #include <stdlib.h>
