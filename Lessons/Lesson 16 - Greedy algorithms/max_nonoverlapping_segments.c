@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/16-greedy_algorithms/max_nonoverlapping_segments/
-Score: https://app.codility.com/demo/results/training38J3KJ-T8A/
+Score: https://app.codility.com/demo/results/trainingJXTGEC-Q8C/
 
 Algorithm:
 1. Check if segment 0 and 1 overlap:
