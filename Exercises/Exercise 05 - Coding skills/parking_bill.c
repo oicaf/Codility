@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/trainings/5/parking_bill/
-Score: https://app.codility.com/demo/results/trainingXJ456B-AR4/
+Score: https://app.codility.com/demo/results/training9BKDKQ-98U/
 
 Algorithm:
 1. First, calculate the full hours, if the parking duration was zero full hours, it means that the 
