@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/15-caterpillar_method/abs_distinct/
-Score: https://app.codility.com/demo/results/trainingZHN8UQ-QVD/
+Score: https://app.codility.com/demo/results/trainingWAETE4-BKP/
 
 Algorithm:
 1. Converting negative array elements (if any) to their absolute value.
