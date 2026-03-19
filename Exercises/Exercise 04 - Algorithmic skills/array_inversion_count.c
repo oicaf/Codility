@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/trainings/4/array_inversion_count/
-Score: https://app.codility.com/demo/results/trainingBF7EZU-KQ3/
+Score: https://app.codility.com/demo/results/trainingBCJRXJ-H56/
 
 Algorithm:
 Counting the number of inversions/replacements of array elements during sorting. Modifications to the 
