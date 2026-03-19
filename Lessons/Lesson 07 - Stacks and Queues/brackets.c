@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/7-stacks_and_queues/brackets/
-Score: https://app.codility.com/demo/results/training5VUJVD-ZH6/
+Score: https://app.codility.com/demo/results/trainingUXY37C-B7V/
 */
 
 #include <string.h>
