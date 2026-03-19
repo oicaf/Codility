@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/trainings/1/flood_depth/
-Score: https://app.codility.com/demo/results/trainingTV6REH-NQQ/
+Score: https://app.codility.com/demo/results/training4HXCW2-WNK/
 
 Algorithm:
 1. The general approach is to scan the entire array and isolate the holes that have two peaks on the left 
