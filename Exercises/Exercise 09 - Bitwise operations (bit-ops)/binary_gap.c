@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/1-iterations/binary_gap/
-Score: https://app.codility.com/demo/results/trainingPKPN2W-JWA/
+Score: https://app.codility.com/demo/results/trainingBGRVBJ-FQN/
 
 Algorithm (cyclically extracting the remainder from division by 2):
 1. Eliminate leading zeros if they appear while waiting for the first one.
