@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/13-fibonacci_numbers/fib_frog/
-Score: https://app.codility.com/demo/results/training82TCGG-E3J/
+Score: https://app.codility.com/demo/results/trainingT9XH9H-XVR/
 
 Algorithm:
 1. Creating an auxiliary 'fib' array with a sequence of Fibonacci numbers where the last element of this 
