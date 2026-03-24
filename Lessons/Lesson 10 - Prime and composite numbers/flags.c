@@ -1,30 +1,31 @@
 /*
 Task: https://app.codility.com/programmers/lessons/10-prime_and_composite_numbers/flags/
-Score: https://app.codility.com/demo/results/trainingQD7MJD-SYG/
+Score: https://app.codility.com/demo/results/trainingDU8SZY-RWC/
 
-Algorithm:
-1. Creating an auxiliary array with the number of all peaks, where the elements of the array denote the 
-peak number.
-2. The initial assumption is that the maximum number of flags that can be placed on the peaks is equal 
-to the square root of the difference between the value of the last peak and the first peak + 1.
-3. Scanning the peak table by verifying the distance between peaks vs the initial number of flags to be 
-placed.
-4. If after each iteration the initial number of possible flags is not equal to the currently maximum 
-number of flags, then the maximum number of flags is reduced by 1, etc.
+Strategy:
+1. Finding all peaks.
+Traverse the array and record the indices of elements that are greater than their neighbors.
+2. Estimating the maximum number of flags.
+The maximum number of flags ≈ the square root of the distance between the first and last peak.
+3. Testing from the maximum number of flags downward.
+For each possible number of flags, K, check whether they can be set.
+4. Greedy flag setting.
+- the first flag on the first peak,
+- subsequent flags only if they are ≥ K away from the last flag,
+5. Returning the first working K.
+The first number of flags that can be set is the result.
 */
 
+#include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 
-int solution(int A[], int N)
-{
-    int i, peaks = 0, flags = 1, dist = 0, max_flags;
-    int *P = (int*)malloc((N / 2) * sizeof(int));
+int solution(int A[], int N) {
+    int i, peaks = 0;
+    int *P = malloc((N / 2) * sizeof(int));
 
-    for (i = 1; i < N - 1; i++)
-    {
-        if (A[i - 1] < A[i] && A[i] > A[i + 1])
-        {
+    for (i = 1; i < N - 1; i++) {
+        if (A[i - 1] < A[i] && A[i] > A[i + 1]) {
             P[peaks] = i;
             peaks++;
         }
@@ -33,23 +34,20 @@ int solution(int A[], int N)
     if (peaks < 2)
         return peaks;
 
-    max_flags = sqrt(P[peaks - 1] - P[0]) + 1;
-        
-    while (1)
-    {
-        for (i = 1; i < peaks; i++)
-        {
-            dist = dist + (P[i] - P[i - 1]);
-            if (dist >= max_flags)
-            {
+    int max_flags = ceil(sqrt(P[peaks - 1] - P[0]));
+    while (1) {
+        int flags = 1;
+        int last = P[0];
+        for (i = 1; i < peaks; i++) {
+            if (P[i] - last >= max_flags) {
                 flags++;
-                dist = 0;
-                if (flags == max_flags)
-                    return max_flags;
+                last = P[i];
+                if (flags == max_flags) {
+                    free(P);
+                    return flags;
+                }
             }
         }
-
-        flags = 1;
         max_flags--;
     }
 }
