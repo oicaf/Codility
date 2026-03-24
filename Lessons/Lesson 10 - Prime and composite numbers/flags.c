@@ -1,6 +1,6 @@
 /*
 Task: https://app.codility.com/programmers/lessons/10-prime_and_composite_numbers/flags/
-Score: https://app.codility.com/demo/results/trainingDU8SZY-RWC/
+Score: https://app.codility.com/demo/results/training7BN39P-HRE/
 
 Strategy:
 1. Finding all peaks.
@@ -21,16 +21,16 @@ The first number of flags that can be set is the result.
 #include <math.h>
 
 int solution(int A[], int N) {
-    int i, peaks = 0;
+    int i;
+    
+    int peaks = 0;
     int *P = malloc((N / 2) * sizeof(int));
-
     for (i = 1; i < N - 1; i++) {
         if (A[i - 1] < A[i] && A[i] > A[i + 1]) {
             P[peaks] = i;
             peaks++;
         }
     }
-
     if (peaks < 2)
         return peaks;
 
@@ -39,7 +39,7 @@ int solution(int A[], int N) {
         int flags = 1;
         int last = P[0];
         for (i = 1; i < peaks; i++) {
-            if (P[i] - last >= max_flags) {
+            if (abs(last - P[i]) >= max_flags) {
                 flags++;
                 last = P[i];
                 if (flags == max_flags) {
