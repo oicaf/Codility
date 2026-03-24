@@ -1,64 +1,71 @@
 /*
 Task: https://app.codility.com/programmers/lessons/17-dynamic_programming/min_abs_sum/
-Score: https://app.codility.com/demo/results/trainingARJ3CW-U7A/
+Score: https://app.codility.com/demo/results/training3YNMUC-W8Z/
 
-Algorithm:
-1. Convert all elements of array A to absolute values ​​(array B).
-2. Determine the max element of array B.
-3. Sum all elements of array B.
-4. Create an array (count) that counts the elements of array B.
-5. Sum the elements of array 'count' starting with the highest values ​​(until exhaustion), while checking whether
-the sum of the elements does not exceed the total sum of elements of array B divided by 2. If the next sum exceeds
-the value of sum/2, the next, smaller element is checked, checking the condition, etc.
-6. The solution ends by traversing the entire array 'count' (without the 0 index), while still maintaining the
-condition that the sum of the elements of array 'count' cannot exceed the sum of the elements of array B divided
-by 2.
-7. Problem with defining one/last test case that generates an incorrect answer.
+Strategy:
+1. Convert the number to absolute values, as the sign is irrelevant when minimizing the difference.
+2. Calculate the sum of all elements, as the value closest to sum/2 is sought.
+3. Count the number of times each value occurs, count[x] = number of occurrences of x.
+4. Construct possible sums (dp):
+- dp[j] tells whether the sum j can be obtained,
+- process the "i" value (1…max), not each element individually.
+5. For each "i" value, use it a maximum of count[i] times,
+controlling this by the counter in dp.
+6. Finally, find the sum closest to sum/2.
 */
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <math.h>
 
-int solution(int A[], int N)
-{
-    int i, sum = 0, result = 0, max = 0, B[N];
+int solution(int A[], int N) {
+    int i, j;
 
     if (N == 0)
         return 0;
     if (N == 1)
         return abs(A[0]);
 
-    for (i = 0; i < N; i++)
-    {
-        B[i] = abs(A[i]);
-        max = B[i] > max ? B[i]: max;
-        sum += B[i];
+    int max = 0, sum = 0;
+    for (i = 0; i < N; i++) {
+        A[i] = abs(A[i]);
+        max = A[i] > max ? A[i]: max;
+        sum += A[i];
     }
 
-    int count[max + 1];
-
+    int *count = malloc((max + 1) * sizeof(int));
 	for (i = 0; i <= max; i++)
 		count[i] = 0;
 
     for (i = 0; i < N; i++)
-    {
-        if (B[i] > 0)
-            count[B[i]]++;
-    }
+        count[A[i]]++;
 
-    for (i = max; i > 0; i--)
-    {
-        while (count[i] > 0)
-        {
-            if ((result + i) <= (sum / 2))
-            {
-                result += i;
-                count[i]--;
+    int *dp = malloc((sum + 1) * sizeof(int));
+    for (i = 0; i <= sum; i++)
+        dp[i] = -1;
+
+    dp[0] = 0;
+    for (i = 1; i <= max; i++) {
+        if (count[i] > 0) {
+            for (j = 0; j <= sum; j++) {
+                if (dp[j] >= 0)
+                    dp[j] = count[i];
+                else if (j >= i && dp[j - i] > 0)
+                    dp[j] = dp[j - i] - 1;
             }
-            else
-                break;
         }
     }
 
-    return sum - (2 * result);
+    int result = sum;
+    for (i = 0; i <= sum/2; i++) {
+        if (dp[i] >= 0) {
+            int diff = sum - 2 * i;
+            if (diff < result)
+                result = diff;
+        }
+    }
+
+    free(count);
+    free(dp);
+    return result;
 }
