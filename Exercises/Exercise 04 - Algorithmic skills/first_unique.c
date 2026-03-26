@@ -1,42 +1,101 @@
 /*
 Task: https://app.codility.com/programmers/trainings/4/first_unique/
-Score: https://app.codility.com/demo/results/trainingZBMMQR-4FS/
+Score: https://app.codility.com/demo/results/trainingEEEW9C-NW8/
 
-Algorithm:
-1. Searching for the maximum value in the input array.
-2. Based on the above value, allocating dynamic memory for an auxiliary array that counts the number of 
-occurrences of each element from the input array.
-3. Scan the input array from the first element and check whether a given array element appears only once 
-in the auxiliary array, if so, this is the final result.
-4. Using calloc is more advantageous than malloc because it additionally resets the entire area (arrays) 
-to zero and there is no need to create additional code to assign zeros to all elements of this area.
-5. The CHAR type was intentionally used in the calloc because when the type was INT it went out of memory 
-and a NULL pointer for size 1,000,000,000 was returned.
+Strategy:
+1. Create pairs: (value, index).
+2. Sort the data (pairs) by value.
+3. Group the pairs: unique pairs first.
+4. Iterate through only the unique pairs, finding the one with the smallest index.
+5. Return the result from the original array.
 */
 
+#include <stdio.h>
 #include <stdlib.h>
 
-int solution(int A[], int N)
-{
-    int i, max = 0;
+typedef struct {
+    int val;
+    int ind;
+} pair;
 
-    for (i = 0; i < N; i++)
-        max = A[i] > max ? A[i] : max;
+void quick_sort(pair array[], int left, int right) {
+    int i = left;
+    int j = right;
+    pair x = array[(left + right) / 2];
 
-    char *count = (char*)calloc((max + 1), sizeof(char));
+    do {
+        while (array[i].val < x.val)
+            i++;
+        while (array[j].val > x.val)
+            j--;
 
-    for (i = 0; i < N; i++)
-        count[A[i]]++;
+        if (i <= j) {
+            pair temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+            i++;
+            j--;
+        }
 
-    for (i = 0; i < N; i++)
-    {
-        if (count[A[i]] == 1)
-        {
-            free(count);
-            return A[i];
+    } while (i <= j);
+
+    if (left < j)
+        quick_sort(array, left, j);
+    if (i < right)
+        quick_sort(array, i, right);
+}
+
+int solution(int A[], int N) {
+    int i;
+
+    if (N == 1)
+        return A[0];
+    if (N == 2)
+        return (A[0] == A[1]) ? -1 : A[0];
+
+    pair *arr = malloc(N * sizeof(pair));
+
+    for (i = 0; i < N; i++) {
+        arr[i].val = A[i];
+        arr[i].ind = i;
+    }
+
+    quick_sort(arr, 0, N - 1);
+
+    int index = -1;
+    pair tmp;
+
+    if (arr[0].val != arr[1].val)
+        index++;
+
+    for (i = 1; i < N-1; i++) {
+        if ((arr[i].val != arr[i-1].val) && (arr[i].val != arr[i+1].val)) {
+            index++;
+            tmp = arr[index];
+            arr[index] = arr[i];
+            arr[i] = tmp;
         }
     }
 
-    free(count);
-    return -1;
+    if (arr[N-2].val != arr[N-1].val) {
+        index++;
+        tmp = arr[index];
+        arr[index] = arr[N-1];
+        arr[N-1] = tmp;
+    }
+
+    if (index == -1) {
+        free(arr);
+        return -1;
+    }
+
+    if (index == 0)
+        return arr[0].val;
+
+    int result = N;
+    for (i = 0; i <= index; i++)
+        result = (arr[i].ind < result) ? arr[i].ind : result;
+
+    free(arr);
+    return A[result];
 }
